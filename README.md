@@ -27,15 +27,15 @@ Projeto desenvolvido para praticar Python, SQL e integração com banco de dados
 
 - 🐍 Python
 - 🗄️ MySQL
-- 🐙 Git/GitHub
+- 🐙 GitHub
 
 ---
 
 ### 🚀 Funcionalidades
 
 - 👤 Cadastro de usuários
-- 🔑 Login de usuários
-- ✅ Validação de dados
+- 🔑 Login de usuários **(pendente)**
+- ✅ Validação de dados **(pendente)**
 - 🗄️ Armazenamento de informações no MySQL
 - 🔎 Consulta de usuários no banco de dados
 
@@ -44,3 +44,21 @@ Projeto desenvolvido para praticar Python, SQL e integração com banco de dados
 ### 🖥️ Execução
 
 O sistema é executado diretamente pelo terminal.
+
+É necessário ter o MySQL instalado e executar o arquivo `banco.sql` para criar o banco de dados e a tabela.
+
+**⚠️ Antes de executar o projeto:**
+
+Configure no arquivo `main.py` os dados de acesso ao seu MySQL, **principalmente o usuário(user) e a senha(password)** da sua instalação.
+
+Por exemplo:
+
+```python
+conexao = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="SUA_SENHA",
+    database="cadastro_db"
+)
+```
+
